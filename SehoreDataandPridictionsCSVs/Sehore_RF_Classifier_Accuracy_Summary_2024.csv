@@ -1,0 +1,2 @@
+system:index,kappa,overall_accuracy,rf_classified_area_sqkm,simple_threshold_area_sqkm,.geo
+0,0.998359968167251,0.9991803278688525,45.16601615714867,40.56154051222704,"{""type"":""MultiPoint"",""coordinates"":[]}"

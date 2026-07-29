@@ -1,0 +1,2 @@
+system:index,ground_truth_points_used,rf_accuracy_independent,rf_kappa_independent,threshold_accuracy_independent,threshold_kappa_independent,.geo
+0,18,0.7777777777777778,0.4782608695652174,0.7777777777777778,0.4782608695652174,"{""type"":""MultiPoint"",""coordinates"":[]}"

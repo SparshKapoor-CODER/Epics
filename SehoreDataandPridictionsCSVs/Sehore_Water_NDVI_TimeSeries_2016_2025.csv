@@ -1,0 +1,11 @@
+system:index,mean_ndvi,water_area_sqkm,year,.geo
+0,0.233560159,28.89723354,2016,"{""type"":""MultiPoint"",""coordinates"":[]}"
+1,0.247728783,28.91334514,2017,"{""type"":""MultiPoint"",""coordinates"":[]}"
+2,0.266605738,26.61647326,2018,"{""type"":""MultiPoint"",""coordinates"":[]}"
+3,0.254023988,22.46427984,2019,"{""type"":""MultiPoint"",""coordinates"":[]}"
+4,0.298707813,51.71214777,2020,"{""type"":""MultiPoint"",""coordinates"":[]}"
+5,0.284782095,42.26022807,2021,"{""type"":""MultiPoint"",""coordinates"":[]}"
+6,0.248937652,29.08782734,2022,"{""type"":""MultiPoint"",""coordinates"":[]}"
+7,0.260214043,35.30018064,2023,"{""type"":""MultiPoint"",""coordinates"":[]}"
+8,0.240451109,34.29384896,2024,"{""type"":""MultiPoint"",""coordinates"":[]}"
+9,0.256125179,35.97050644,2025,"{""type"":""MultiPoint"",""coordinates"":[]}"
