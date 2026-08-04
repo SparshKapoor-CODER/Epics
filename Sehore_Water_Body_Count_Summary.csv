@@ -1,0 +1,3 @@
+system:index,metric,value,.geo
+0,total_blobs_before_size_filter,841,"{""type"":""MultiPoint"",""coordinates"":[]}"
+1,distinct_water_bodies_after_0.5ha_filter,92,"{""type"":""MultiPoint"",""coordinates"":[]}"
