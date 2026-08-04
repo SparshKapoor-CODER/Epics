@@ -54,7 +54,11 @@ var vectors = waterMask2024.reduceToVectors({
 // smaller than 0.5 hectares — adjust this threshold if needed once you
 // see the distribution.
 var vectorsWithArea = vectors.map(function(f) {
-  var areaHa = f.geometry().area().divide(10000);
+  // .area() requires an explicit error margin (max allowed distance
+  // tolerance) when working in geographic coordinates — without it GEE
+  // won't compute an approximate area at all. 1 meter is more than
+  // precise enough here.
+  var areaHa = f.geometry().area(1).divide(10000);
   return f.set('area_ha', areaHa);
 });
 
