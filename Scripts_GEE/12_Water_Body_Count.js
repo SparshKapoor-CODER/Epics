@@ -34,19 +34,13 @@ function getWaterMask(year) {
 
 var waterMask2024 = getWaterMask('2024');
 
-// ---- Connected component labeling: each separate blob of connected
-// water pixels gets a unique ID. maxSize caps how large a single
-// connected patch can be before it's truncated (safety limit, generous
-// here since even a big reservoir won't approach it). ----
-var connected = waterMask2024.connectedComponents({
-  connectedness: ee.Kernel.plus(1), // 4-connectivity (standard for water bodies)
-  maxSize: 4096
-});
-
-// ---- Convert labeled patches to vector polygons so we can count and
-// filter by area (removes tiny 1-2 pixel noise blobs that aren't real
-// water bodies, just threshold noise). ----
-var vectors = connected.select('labels').reduceToVectors({
+// ---- Vectorize directly: reduceToVectors() already treats each connected
+// group of water pixels as one polygon, with no size cap — unlike
+// ee.Image.connectedComponents(), which hard-caps segment size at 1024
+// pixels (~10.24 ha at 10m resolution) and MASKS OUT anything larger.
+// That would have silently excluded Sehore's biggest reservoirs from the
+// count, which is the opposite of what we want. ----
+var vectors = waterMask2024.reduceToVectors({
   geometry: sehore.geometry(),
   crs: 'EPSG:4326',
   scale: 10,
