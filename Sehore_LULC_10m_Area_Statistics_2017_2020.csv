@@ -1,0 +1,3 @@
+system:index,groups,label,.geo
+0,"[{category=1, sum=5.941553525283898E8}, {category=2, sum=7.729827474949862E8}, {category=3, sum=207917.0252609253}, {category=4, sum=4.926643750880802E9}, {category=5, sum=1.759503256427228E8}, {category=7, sum=1990107.0815557144}, {category=8, sum=7.647884056391191E7}]",2017,"{""type"":""MultiPoint"",""coordinates"":[]}"
+1,"[{category=1, sum=1.5753607124004784E8}, {category=2, sum=1.2074603591305258E9}, {category=3, sum=70958.41851043701}, {category=4, sum=4.881453056321919E9}, {category=5, sum=2.1150840149184582E8}, {category=7, sum=720450.2231619742}, {category=8, sum=8.965974439161254E7}]",2020,"{""type"":""MultiPoint"",""coordinates"":[]}"
